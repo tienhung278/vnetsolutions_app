@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <th>Product Name</th>
+        <th>Sale Units</th>
+        <th>Sale Revenue</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let saleProduct of saleProducts$ | async">
+            <td>{{saleProduct.productName}}</td>
+            <td>{{saleProduct.saleUnits}}</td>
+            <td>{{saleProduct.saleRevenue}}</td>
+        </tr>
+    </tbody>
+</table>
